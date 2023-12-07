@@ -208,11 +208,13 @@
 
 # EXTRA
 
+Se tuvo que crear una función para mejor manejo de las consultas.
 
+Por otro lado en la tabla ***parada_ruta*** se le agrego dos campos los cuales me indican si la ruta es inicio o fin de ruta con su debido **CONSTRAINT** para cada uno de estos campos, esto se ve reflejado en el archivo **filtro.sql** en el cual estan las **querys** para la creación y poblado de la base de datos.
 
 ## FUNCTIONS
 
-Se crea una funcino para el conteo de paradas asignadas a una zona:
+Se crea una función para el conteo de paradas asignadas a una zona:
 
 ```sql
 CREATE FUNCTION contar_rutas_zonas(id_zona INT) RETURNS INT DETERMINISTIC
